@@ -11,6 +11,8 @@
 		C8A5D2861F2204C300A6EA94 /* CarthageSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A5D2851F2204C300A6EA94 /* CarthageSampleTests.swift */; };
 		C8A5D2881F2204C300A6EA94 /* CarthageSample.h in Headers */ = {isa = PBXBuildFile; fileRef = C8A5D27A1F2204C300A6EA94 /* CarthageSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C8BF54AD1F25988500EB891F /* SampleUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BF54AC1F25988500EB891F /* SampleUIColor.swift */; };
+		C8BF54AF1F25C71D00EB891F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BF54AE1F25C71D00EB891F /* Nimble.framework */; };
+		C8BF54B11F25C72400EB891F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BF54B01F25C72400EB891F /* Quick.framework */; };
 		C8E7A2E01F220FA100D76BFC /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E7A2DF1F220FA100D76BFC /* Curry.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		C8A5D2851F2204C300A6EA94 /* CarthageSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarthageSampleTests.swift; sourceTree = "<group>"; };
 		C8A5D2871F2204C300A6EA94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8BF54AC1F25988500EB891F /* SampleUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleUIColor.swift; sourceTree = "<group>"; };
+		C8BF54AE1F25C71D00EB891F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		C8BF54B01F25C72400EB891F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 		C8E7A2D91F220F5100D76BFC /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = "Carthage/Checkouts/Curry/build/Debug-iphoneos/Curry.framework"; sourceTree = "<group>"; };
 		C8E7A2DB1F220F5600D76BFC /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
 		C8E7A2DD1F220F5C00D76BFC /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8BF54B11F25C72400EB891F /* Quick.framework in Frameworks */,
+				C8BF54AF1F25C71D00EB891F /* Nimble.framework in Frameworks */,
 				C8A5D2811F2204C300A6EA94 /* CarthageSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +105,8 @@
 		C8E7A2D81F220F5100D76BFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8BF54B01F25C72400EB891F /* Quick.framework */,
+				C8BF54AE1F25C71D00EB891F /* Nimble.framework */,
 				C8E7A2DF1F220FA100D76BFC /* Curry.framework */,
 				C8E7A2DD1F220F5C00D76BFC /* Quick.framework */,
 				C8E7A2DB1F220F5600D76BFC /* Nimble.framework */,
@@ -390,6 +398,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3AZ5DU686K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = CarthageSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.djdg.CarthageSampleTests;
@@ -403,6 +416,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 3AZ5DU686K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = CarthageSampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.djdg.CarthageSampleTests;
